@@ -13,6 +13,12 @@
 		C59CFE3327971B64009B0AA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C59CFE3127971B64009B0AA9 /* Main.storyboard */; };
 		C59CFE3527971B64009B0AA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C59CFE3427971B64009B0AA9 /* Assets.xcassets */; };
 		C59CFE3827971B64009B0AA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C59CFE3627971B64009B0AA9 /* LaunchScreen.storyboard */; };
+		C59CFE4527971BA1009B0AA9 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59CFE4427971BA1009B0AA9 /* DownloadService.swift */; };
+		C59CFE4727971BAB009B0AA9 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59CFE4627971BAB009B0AA9 /* Repo.swift */; };
+		C59CFE4A27971C30009B0AA9 /* RoundedTextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59CFE4927971C30009B0AA9 /* RoundedTextFieldExtension.swift */; };
+		C59CFE4D27971C61009B0AA9 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59CFE4B27971C61009B0AA9 /* CustomTableViewCell.swift */; };
+		C59CFE4E27971C61009B0AA9 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C59CFE4C27971C61009B0AA9 /* CustomTableViewCell.xib */; };
+		C59CFE51279722E6009B0AA9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59CFE50279722E6009B0AA9 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		C59CFE3427971B64009B0AA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C59CFE3727971B64009B0AA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C59CFE3927971B64009B0AA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C59CFE4427971BA1009B0AA9 /* DownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
+		C59CFE4627971BAB009B0AA9 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		C59CFE4927971C30009B0AA9 /* RoundedTextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextFieldExtension.swift; sourceTree = "<group>"; };
+		C59CFE4B27971C61009B0AA9 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		C59CFE4C27971C61009B0AA9 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		C59CFE50279722E6009B0AA9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +70,67 @@
 			children = (
 				C59CFE2B27971B64009B0AA9 /* AppDelegate.swift */,
 				C59CFE2D27971B64009B0AA9 /* SceneDelegate.swift */,
-				C59CFE2F27971B64009B0AA9 /* ViewController.swift */,
+				C59CFE4F279722B5009B0AA9 /* Utilities */,
+				C59CFE4227971B89009B0AA9 /* Services */,
+				C59CFE3F27971B69009B0AA9 /* Model */,
+				C59CFE4027971B6C009B0AA9 /* View */,
+				C59CFE4127971B6F009B0AA9 /* Controller */,
 				C59CFE3127971B64009B0AA9 /* Main.storyboard */,
 				C59CFE3427971B64009B0AA9 /* Assets.xcassets */,
 				C59CFE3627971B64009B0AA9 /* LaunchScreen.storyboard */,
 				C59CFE3927971B64009B0AA9 /* Info.plist */,
 			);
 			path = GitHubProject;
+			sourceTree = "<group>";
+		};
+		C59CFE3F27971B69009B0AA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C59CFE4627971BAB009B0AA9 /* Repo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C59CFE4027971B6C009B0AA9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C59CFE5527972671009B0AA9 /* CustomCell */,
+				C59CFE4927971C30009B0AA9 /* RoundedTextFieldExtension.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C59CFE4127971B6F009B0AA9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C59CFE2F27971B64009B0AA9 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C59CFE4227971B89009B0AA9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C59CFE4427971BA1009B0AA9 /* DownloadService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C59CFE4F279722B5009B0AA9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C59CFE50279722E6009B0AA9 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C59CFE5527972671009B0AA9 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				C59CFE4B27971C61009B0AA9 /* CustomTableViewCell.swift */,
+				C59CFE4C27971C61009B0AA9 /* CustomTableViewCell.xib */,
+			);
+			path = CustomCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +193,7 @@
 			files = (
 				C59CFE3827971B64009B0AA9 /* LaunchScreen.storyboard in Resources */,
 				C59CFE3527971B64009B0AA9 /* Assets.xcassets in Resources */,
+				C59CFE4E27971C61009B0AA9 /* CustomTableViewCell.xib in Resources */,
 				C59CFE3327971B64009B0AA9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,8 +206,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C59CFE3027971B64009B0AA9 /* ViewController.swift in Sources */,
+				C59CFE4527971BA1009B0AA9 /* DownloadService.swift in Sources */,
+				C59CFE4727971BAB009B0AA9 /* Repo.swift in Sources */,
+				C59CFE4D27971C61009B0AA9 /* CustomTableViewCell.swift in Sources */,
 				C59CFE2C27971B64009B0AA9 /* AppDelegate.swift in Sources */,
 				C59CFE2E27971B64009B0AA9 /* SceneDelegate.swift in Sources */,
+				C59CFE4A27971C30009B0AA9 /* RoundedTextFieldExtension.swift in Sources */,
+				C59CFE51279722E6009B0AA9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
