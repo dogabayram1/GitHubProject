@@ -26,7 +26,7 @@
                                 <rect key="frame" x="20" y="183" width="374" height="659"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a search" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tLD-r3-Ht8">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tLD-r3-Ht8">
                                 <rect key="frame" x="20" y="129" width="374" height="34"/>
                                 <color key="textColor" red="0.34901960780000002" green="0.41960784309999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-HeavyItalic" family="Avenir Next" pointSize="15"/>

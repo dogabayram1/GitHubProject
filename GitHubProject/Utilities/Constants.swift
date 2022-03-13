@@ -7,7 +7,9 @@
 
 import Foundation
 
-let searchUrl = "https://api.github.com/search/repositories?q="
-let descendingSegment = "&sort=start&order=desc"
 
-let repoCell = "repoCell"
+struct Constants{
+    static let searchUrl = "https://api.github.com/search/repositories?q="
+    static let descendingSegment = "&sort=start&order=desc"
+    static let repoCell = "repoCell"
+}
